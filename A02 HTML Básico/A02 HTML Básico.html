@@ -1,0 +1,148 @@
+<!-- Tipo de arquivo: HTML5 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Comando para atribuir um título na aba referente ao site -->
+  <title>BCC481</title>
+  <!-- Comando para atribuir um icone na aba referente ao site -->
+  <link rel="icon" href="icone.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" charset="UTF-8">
+</head>
+<!-- "Cabeçalho" do Site -->
+<header>
+  <!-- h1,h2... se referem a Títulos-->
+  <h1 id="Inicio">Título: PRIMEIRA AULA DE PROGRAMAÇÃO WEB</h1>
+</header>
+
+<!-- "Corpo" do site -->
+
+<body>
+  <!-- Comando para criar um parágrafo -->
+  <p>
+    <!-- "em" se refere a "emphasize" de enfatizar (itálico) -->
+    <em>Parágrafo</em>: Corpo do texto do site
+  </p>
+  <!-- exemplo de declaração de uma imagem a partir de um arquivo em html-->
+  <p><img src="decom.png" /></p>
+
+  <!-- exemplo de declaração de uma imagem em html com link -->
+  <!-- Não deve ser uma boa prática por que a imagem pode ficar quebrada após perder o link -->
+  <p><img src="http://www3.decom.ufop.br/decom/site_media/img/logos-ufop-decom.png" /></p>
+
+  <!-- Melhor maneira é atribuir um alternativo que descreva o que a imagem significa -->
+  <p>
+    <a href="http://www3.decom.ufop.br/decom/inicio/">
+      <img src="decom.png" alt="Logo da UFOP" width="174" height="147" />
+      <!-- widht e height descrito no CSS preferencialmente -->
+    </a>
+  </p>
+
+  <!-- Exemplo de declaração de link-->
+  <p><a href="http://www3.decom.ufop.br/decom/inicio/">Site do Decom</a></p>
+
+  <!-- comando para quebra de linha -->
+  <p>Quebra<br />de<br />linha</p>
+
+  <!-- comando para negrito -->
+  <p>Texto em <strong>negrito</strong>!</p>
+
+  <!-- Exemplo de lista não ordenada (unordened list - ul) -->
+  <p>
+    Lista de compras:
+  <ul type="square">
+    <!-- 
+                    Tipos de listas não ordenadas:
+                    disc (padrão) = circulo preenchido
+                    circle = circulo não preenchido
+                    square = quadrado preenchido
+                 -->
+
+    <li>Café</li>
+    <li>Leite</li>
+  </ul>
+  </p>
+  <!-- Exemplo de lista ordenada (ordened list - ol) -->
+  <p>
+    Lista Enumerada:
+  <ol type="1">
+    <!-- 
+                    Tipos de listas ordenadas:
+                        1 (padrão) = Números
+                        a = Letras minúsculas
+                        A = Letras Maiúsculas
+                        i = Números romanos minúsculos
+                        I = Números romanos maiúsculos
+                -->
+    <li>Primeiro</li>
+    <li>Segundo</li>
+    <li>Terceiro</li>
+  </ol>
+  </p>
+
+  <!-- linha horizontal -->
+  <hr />
+  <p>
+    Formatações de texto:
+  <ul>
+    <li><b>Negrito</b></>
+    <li><strong>Negrito e importante</strong></li>
+    <li><i>Itálico</i></li>
+    <li><em>Itálico e Enfatizado</em></li>
+    <li><mark>Marcado</mark></li>
+    <li><small>Pequeno</small></li>
+    <li><del>Marcado como excluído</del></li>
+    <li><ins>Sublinhado, Inserido</ins></li>
+    <li>Texto<sub>Subscrito</sub></li>
+    <li>Texto<sup>Sobrescrito</sup></li>
+  </ul>
+  </p>
+
+  <hr />
+
+  <!-- exemplo de picture para diferentes tamanhos de telas -->
+  <picture>
+    <source media="(min-width:500px)" srcset="decom.png">
+    <img src="icone.png">
+  </picture>
+
+  <p><a href="#Inicio">Voltar ao Início</a></p>
+</body>
+
+<!-- Testes com article -->
+<body>
+  teste
+  <article>
+    teste
+    <section>
+      teste
+    </section>
+  </article>
+</body>
+
+
+<!-- Criando novas tags -->
+<!-- Não é recomendado -->
+
+<body>
+  <script>document.createElement("myHero")</script>
+  <style>
+    myHero {
+      display: block;
+      background-color: #dddddd;
+      padding: 50px;
+      font-size: 30px;
+    }
+  </style>
+  <myHero>Teste da nova Tag</myHero>
+</body>
+
+
+<hr />
+<small>
+  <footer>
+    Site escrito para estudo da disciplina BCC481- Programação Web
+  </footer>
+</small>
+
+</html>

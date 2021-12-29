@@ -1,0 +1,12 @@
+body{
+  text-align: center;
+}
+
+#button {
+  cursor: pointer;
+}
+
+#cotacao{
+  display: flex;
+  justify-content: space-around;
+}

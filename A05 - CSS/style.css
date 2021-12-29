@@ -1,0 +1,27 @@
+header {
+  background-color: lightskyblue;
+}
+
+nav {
+background-color: orange;
+padding-bottom: 20px;
+}
+
+nav a:link {
+  color: purple;
+}
+
+main section header, main p, .contact{
+  text-align: center;
+}
+
+main section, .contact{
+  background-color: gray;
+  border-radius: 10px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+footer {
+  background-color: black;
+}
